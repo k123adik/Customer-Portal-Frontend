@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Management</title>
+</head>
+<body>
+    <h1>Sunbase Customer Portal</h1>
+
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="login_id">Username:</label>
+        <input type="text" id="login_id" name="login_id" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Customer List -->
+    <h2>Customer List</h2>
+    <table id="customerTable" border="1">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Street</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <!-- Create Customer Form -->
+    <h2>Create Customer</h2>
+    <form id="createCustomerForm">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <button type="submit">Create Customer</button>
+    </form>
+
+    <!-- Update Customer Form -->
+    <h2>Update Customer</h2>
+    <form id="updateCustomerForm">
+        <label for="update_uuid">UUID:</label>
+        <input type="text" id="update_uuid" name="update_uuid" required>
+
+        <!-- Include fields for customer details similar to the create form above -->
+        <!-- ... -->
+
+        <button type="submit">Update Customer</button>
+    </form>
+
+    <!-- Delete Customer Form -->
+    <h2>Delete Customer</h2>
+    <form id="deleteCustomerForm">
+        <label for="delete_uuid">UUID:</label>
+        <input type="text" id="delete_uuid" name="delete_uuid" required>
+
+        <button type="submit">Delete Customer</button>
+    </form>
+
+   
+</body>
+</html>
